@@ -3,8 +3,8 @@ main = "src/worker.ts"
 compatibility_date = "2026-02-19"
 
 [vars]
-APP_ORIGIN = "https://zero.blt.owasp.org"
-MAIN_BLT_API_URL = "https://blt.owasp.org"
+APP_ORIGIN = "https://zero.owaspblt.org"
+MAIN_BLT_API_URL = "https://api.owaspblt.org"
 POINTS_AWARD = "3"
 MAX_UPLOAD_BYTES = "3145728" # 3 MiB encrypted package cap
 RATE_LIMIT_PER_MINUTE = "5"
