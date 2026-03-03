@@ -1,3 +1,4 @@
+
 import { getDomain, upsertDomain, insertSubmission, rateLimitHit } from "./db";
 import {
   normalizeDomain,
@@ -15,6 +16,7 @@ import {
   adminOnboardPage,
   onboardingEmailBody
 } from "./templates";
+
 
 function json(data: any, status = 200) {
   return new Response(JSON.stringify(data), {
