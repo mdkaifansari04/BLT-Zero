@@ -3,6 +3,14 @@ main = "src/worker.ts"
 compatibility_date = "2026-02-28" # Use a current date
 compatibility_flags = ["python_workers"]
 
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
+
+[assets]
+directory = "./static"
+
 [vars]
 APP_ORIGIN = "https://zero.owaspblt.org"
 MAIN_BLT_API_URL = "https://api.owaspblt.org"
@@ -20,4 +28,4 @@ TURNSTILE_SITE_KEY = "REPLACE_ME"
 [[d1_databases]]
 binding = "DB"
 database_name = "blt_zero"
-database_id = "0fd8d04c-f434-48a1-a5d2-617b49ce79ff"
+database_id = "0fd8d04c-f434-48a1-a5d2-617b49ce79ff" # Replace with your actual D1 database ID
